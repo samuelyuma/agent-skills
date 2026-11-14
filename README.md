@@ -59,6 +59,12 @@ The `tests/cases.md` and `tests/rubric.md` files inside each skill describe
 behavioral evaluation scenarios. Use the relevant cases when changing a skill;
 installer discovery alone does not verify an agent's behavior.
 
+## Credits
+
+Public-content guidance in the writing skill includes material adapted from
+[orepras](https://github.com/orepras). See [CREDITS.md](CREDITS.md) for
+sources, revisions, and permission status.
+
 ## License
 
 [MIT](LICENSE).

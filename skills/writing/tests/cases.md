@@ -9,7 +9,7 @@ Maintainer-only prompts and expected properties. Do not load this file during or
 3. For regression comparison, run the same request against the previous skill snapshot in another session. Compare clarity and preserved meaning, not exact wording.
 4. Record the skill version, loaded references, output, and applicable results from [the rubric](rubric.md). Keep evaluation artifacts outside this skill directory.
 
-Cases 1 to 10 preserve the original skill's scenarios. Later cases cover the broader scope and relaxed formatting rules. Naming a secret file in hypothetical prose never authorizes reading it.
+Cases 1 to 10 preserve the original skill's scenarios. Later cases cover the broader scope, relaxed formatting rules, and public-facing copy. Naming a secret file in hypothetical prose never authorizes reading it.
 
 ## Original Coverage
 
@@ -46,7 +46,7 @@ Cases 1 to 10 preserve the original skill's scenarios. Later cases cover the bro
 
 ## Reference Selection
 
-Check loaded files as well as outputs. Ordinary English chat should not load every language file, the detailed anti-slop list, or this test directory. Indonesian output needs Indonesian guidance. Humanization needs editing and anti-slop guidance; summarization needs its own reference. Selecting a PR or commit use case should not cause publication or a commit.
+Check loaded files as well as outputs. Ordinary English chat should not load every language file, the detailed anti-slop list, or this test directory. Indonesian output needs Indonesian guidance. Humanization needs editing and anti-slop guidance; summarization needs its own reference. Public-facing content needs `public-content.md`, the matching plain-language file, and `ui-copy.md` or `rasa.md` as applicable. Developer prose should not load the public-content files. Selecting a PR or commit use case should not cause publication or a commit.
 
 ## Readability Coverage (Indonesian and Structure)
 
@@ -57,3 +57,14 @@ Check loaded files as well as outputs. Ordinary English chat should not load eve
 | 26 | Rewrite this Indonesian sentence: "Pakai handler yang sekarang." No other context supplied. | Does not invent a handler name; asks for or marks the missing name instead of keeping "yang sekarang" |
 | 27 | Compress an Indonesian paragraph by half. | Subjects and connectors (karena, supaya, sehingga) survive; no rule changes from required to optional |
 | 28 | Write Indonesian text that mixes protocol terms. | Keeps cursor, header, payload, retry in English; writes kirim, simpan, tolak, riwayat pesan in Indonesian |
+
+## Public Content Coverage
+
+| Case | Request | Expected Properties |
+|---|---|---|
+| 29 | Write an Indonesian error message for a failed transfer and a confirmation before deleting an account. | No blame; says what happened and what to do next; deletion names the consequence and whether it can be undone; sentence case; one consistent kamu/Anda choice |
+| 30 | Write an English empty state and button for a project list with no projects. | Empty state explains the condition and the next step; button uses a specific active verb; no OK, Submit, or Process; sentence case |
+| 31 | Write an Indonesian public notice about a Rp5 miliar program budget for 4 June 2026, with 30% for training. | Uses Rp5 miliar and 4 Juni 2026; percentage has a base; numbers are not piled; no ambiguous date format |
+| 32 | Rewrite for a public-service page: "Penyandang cacat yang ingin mengajukan bantuan dapat menghubungi kami." | People-first, non-stigmatizing wording; active voice; channel and meaning unchanged |
+| 33 | Evaluate and rewrite in Indonesian: "Dalam era digital yang terus berkembang, solusi inovatif kami menghadirkan pengalaman yang mulus." | RASA failures named: empty claim, vague adjective, template voice; rewrite names a concrete mechanism or removes the claim; no invented facts |
+| 34 | Write a PR description for a cache expiry fix, plus the user-facing error message shown when the cache cannot refresh. | PR keeps developer conventions; the error message follows public-copy rules: what happened, no blame, next step; no invented tests or results |

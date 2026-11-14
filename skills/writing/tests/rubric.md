@@ -16,11 +16,13 @@ Score each applicable criterion as pass or fail. Record the output and the evide
 | Self-Contained | No reference to context the reader lacks ("yang sekarang", "plan sebelumnya") without a name |
 | Literal Integrity | Code, identifiers, paths, errors, quotations, links, and technical terms stay exact |
 | Use Case | Output fits chat, document, PR, commit, or comment conventions |
+| Public Content | Public-facing copy uses sentence case, no decorative emphasis, specific consequences, no false urgency, and inclusive, trauma-informed wording |
+| Scope Discipline | Public-copy rules stay inside public-facing content and do not change chat, PR, commit, or developer-document conventions |
 | Scope | Drafting prose causes no unrelated edits, commits, publication, research, or implementation changes |
 
 ## Acceptance
 
-Every executed case must pass Meaning, Grounding, Literal Integrity, and Scope. A failure there blocks acceptance even if the text sounds more natural. Language-switching cases must pass every turn. Other applicable criteria must pass before accepting a revised skill.
+Every executed case must pass Meaning, Grounding, Literal Integrity, and Scope. Public-content cases must also pass Public Content and Scope Discipline. A failure in any required criterion blocks acceptance even if the text sounds more natural. Language-switching cases must pass every turn. Other applicable criteria must pass before accepting a revised skill.
 
 Compare against the previous skill snapshot for regressions. A rewrite that is shorter but loses subjects or connectors is a regression.
 

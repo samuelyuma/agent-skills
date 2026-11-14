@@ -35,6 +35,7 @@ Do not read all references. Most tasks need the type file plus `verification.md`
 - **Evidence over memory.** Read the code, config, and sources for every command, number, and behavior. Mark gaps as unknown. Never invent owners, dates, or results.
 - **Keep what works.** In updates, keep existing structure, language, handwritten content, and citations unless a rewrite was requested. Report meaningful removals.
 - **Language.** An update keeps the document's language. A new document follows an explicit request, then the language of nearby docs, then the user's message. Chat replies follow the user's current message.
+- **Public audience.** For help center articles, public guides, notices, and UI copy, also follow `writing/references/public-content.md` and the matching plain-language file when available.
 - **Library facts.** Verify API or config claims about a library with `research/references/library-docs.md` before writing them.
 - **Long contracts or heavy reasoning.** For a document whose structure is unclear, a short pass with the sequential thinking tool (see `plan/references/structured-thinking.md`) can help outline it. Do not paste the reasoning into the document.
 
