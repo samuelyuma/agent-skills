@@ -20,6 +20,7 @@ Decide three things before writing: who reads it, what decision or action it sup
 | Release notes or changelog | `references/release.md` |
 | Weekly or status report | `references/reports.md` |
 | Research findings | `references/research-reports.md` |
+| Codebase guide (architecture, startup, feature flows) | Use the `codebase-summary` skill |
 | Missing facts or conflicting evidence | `references/clarifying.md` |
 | Table, diagram, alert, collapsible | `references/rich-elements.md` |
 | Before delivering anything | `references/verification.md` |

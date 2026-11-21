@@ -31,6 +31,9 @@ npx skills add samuelyuma/agent-skills --list
 
 - [agent-instructions](skills/agent-instructions/SKILL.md): create and review
   repository or global agent instructions, such as `AGENTS.md`.
+- [codebase-summary](skills/codebase-summary/SKILL.md): create bounded codebase
+  documentation explaining architecture, responsibilities, and feature flows
+  through repository evidence.
 - [documentation](skills/documentation/SKILL.md): write and maintain READMEs,
   guides, API specifications, proposals, release notes, and reports.
 - [plan](skills/plan/SKILL.md): create and review implementation plans grounded
@@ -40,8 +43,8 @@ npx skills add samuelyuma/agent-skills --list
 - [writing](skills/writing/SKILL.md): write and edit clear English or Indonesian
   prose for chat, documents, PRs, commits, and code comments.
 
-The skills work individually. References to other skills are optional; installing
-all five gives an agent the related workflows as well.
+The skills work individually and reuse related skills when available. Installing
+the full collection gives an agent the shared workflows as well.
 
 ## Local Development
 
